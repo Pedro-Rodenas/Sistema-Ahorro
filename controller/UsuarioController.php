@@ -18,7 +18,7 @@ class UsuarioController
             $usuario = $this->model->login($_POST['email'], $_POST['password']);
             if ($usuario) {
                 $_SESSION['usuario'] = $usuario;
-                header("Location: ../view/home.php");
+                header("Location: ../view/dashboard.php");
                 exit;
             } else {
                 header("Location: ../index.php?msg=login_error");
