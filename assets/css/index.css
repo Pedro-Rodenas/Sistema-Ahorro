@@ -86,13 +86,16 @@ form button {
     padding: 10px;
     margin: 12px 0;
     font-size: 16px;
-}
-
-form button {
     background-color: #2B2D6E;
     color: #fff;
     border: none;
     border-radius: 4px;
+    transition: 1s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #1b1d46;
 }
 
 form p {

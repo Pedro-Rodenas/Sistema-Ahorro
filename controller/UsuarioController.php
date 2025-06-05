@@ -46,6 +46,15 @@ class UsuarioController
             exit;
         }
     }
+
+    public function logout()
+    {
+        session_start();
+        session_unset();
+        session_destroy();
+        header("Location: ../index.php");
+        exit;
+    }
 }
 
 if (isset($_GET['action'])) {
@@ -54,5 +63,15 @@ if (isset($_GET['action'])) {
         $controller->login();
     } elseif ($_GET['action'] === 'register') {
         $controller->registro();
+    }
+}
+
+if (isset($_GET['action'])) {
+    $controller = new UsuarioController();
+
+    if ($_GET['action'] === 'login') {
+        $controller->login();
+    } elseif ($_GET['action'] === 'logout') {
+        $controller->logout();
     }
 }
