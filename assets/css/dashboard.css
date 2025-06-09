@@ -77,8 +77,11 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+    /* Esto hace que las filas de la grid estiren al máximo */
 }
-
+.c-estadisticas,
 table {
     width: 100%;
     border-collapse: collapse;

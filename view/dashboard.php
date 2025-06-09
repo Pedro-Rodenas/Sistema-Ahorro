@@ -15,6 +15,7 @@ if (!isset($_SESSION['usuario'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Estadísticas</title>
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@ if (!isset($_SESSION['usuario'])) {
         </div>
         <section class="c-p-stads">
             <div class="c-estadisticas">
-                <p>Estadísticas</p>
+                <div id="grafico-ingresos-egresos" style="height: 300px; margin-top: 10px;"></div>
             </div>
             <table>
                 <thead>
@@ -45,6 +46,7 @@ if (!isset($_SESSION['usuario'])) {
     </main>
     <script src="../assets/js/saldoDashboard.js"></script>
     <script src="../assets/js/historialMovimientos.js"></script>
+    <script src="../assets/js/tablaestadistica.js"></script>
 </body>
 
 </html>
