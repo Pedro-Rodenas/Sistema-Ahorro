@@ -19,6 +19,9 @@ if (!isset($_SESSION['usuario'])) {
 
 <body>
     <?php include_once __DIR__ . '/../template/header.php'; ?>
+    <main>
+
+    </main>
 </body>
 
 </html>

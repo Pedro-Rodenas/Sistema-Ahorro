@@ -1,4 +1,13 @@
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
+:root {
+    --color-activo: #D4AF37;
+}
+
+main {
+    margin: 0 20%;
+}
+
+.dash {
+    border-left: 3px solid !important;
+    color: var(--color-activo) !important;
+    padding-left: 10px !important;
 }

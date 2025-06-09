@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuevos Movimientos</title>
     <link rel="stylesheet" href="../assets/css/registrar_movimientos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -56,6 +57,35 @@
     </main>
 
     <script src="../assets/js/cargarCategorias.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+
+            if (params.has('exito')) {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Movimiento registrado!',
+                    text: 'El movimiento se guardó correctamente.',
+                    confirmButtonColor: '#2B2D6E'
+                }).then(() => {
+                    // Limpiar la URL después de cerrar la alerta
+                    window.history.replaceState(null, '', window.location.pathname);
+                });
+            }
+
+            if (params.has('error')) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error al registrar',
+                    text: 'Hubo un problema al guardar el movimiento.',
+                    confirmButtonColor: '#D4AF37'
+                }).then(() => {
+                    // Limpiar la URL después de cerrar la alerta
+                    window.history.replaceState(null, '', window.location.pathname);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

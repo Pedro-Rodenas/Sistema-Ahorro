@@ -7,9 +7,9 @@
     </div>
 
     <ul class="sidebar-menu">
-        <li><a href="dashboard.php">Dashboard</a></li>
-        <li><a href="registrar_movimientos.php">Registrar Movimientos</a></li>
-        <li><a href="perfil.php">Perfil</a></li>
+        <li><a class="dash" href="dashboard.php">Dashboard</a></li>
+        <li><a class="registrar_movimiento" href="registrar_movimientos.php">Registrar</a></li>
+        <li><a class="" href="perfil.php">Perfil</a></li>
     </ul>
 
     <div class="logout-section">
