@@ -48,7 +48,7 @@
                     </div>
 
                     <label for="fecha">Fecha:</label>
-                    <input type="date" name="fecha" value="<?= date('Y-m-d') ?>" required>
+                    <input type="datetime-local" name="fecha" value="<?= date('Y-m-d') ?>" required>
 
                     <button type="submit">Guardar</button>
                 </form>

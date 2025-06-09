@@ -20,8 +20,12 @@ if (!isset($_SESSION['usuario'])) {
 <body>
     <?php include_once __DIR__ . '/../template/header.php'; ?>
     <main>
-
+        <div id="saldo-container" class="dashboard-saldo">
+            <h2>Saldo Disponible</h2>
+            <p id="saldo-valor">Cargando...</p>
+        </div>
     </main>
+    <script src="../assets/js/saldoDashboard.js"></script>
 </body>
 
 </html>

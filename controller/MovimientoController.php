@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['action'] === 'registrar') {
     $categoria_id = $_POST['categoria_id'];
     $detalle = trim($_POST['detalle']);
     $monto = floatval($_POST['monto']);
-    $fecha = $_POST['fecha'];
+    $fecha = date('Y-m-d H:i:s', strtotime($_POST['fecha']));
     $usuario_id = $_SESSION['usuario_id'] ?? null;
 
 

@@ -1,13 +1,73 @@
 :root {
     --color-activo: #D4AF37;
+    --color-fondo: #6E7582;
+    --color-texto: #F0E9D2;
+    --color-sombra: rgba(0, 0, 0, 0.3);
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
-    margin: 0 20%;
+    margin-left: 20%;
 }
 
-.dash {
-    border-left: 3px solid !important;
-    color: var(--color-activo) !important;
-    padding-left: 10px !important;
+.dashboard-saldo {
+    width: 60%;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 10px 5px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px var(--color-sombra), inset 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: var(--font-family);
+    margin: auto;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeScaleIn 0.6s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes fadeScaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Título */
+.dashboard-saldo h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Valor del saldo */
+#saldo-valor {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--color-activo);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
+    margin: 0;
+    user-select: none;
+}
+
+.dashboard-saldo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    100% {
+        left: 100%;
+    }
 }
