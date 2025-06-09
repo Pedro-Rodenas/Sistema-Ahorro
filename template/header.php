@@ -2,12 +2,13 @@
 
 <nav class="sidebar">
     <div class="sidebar-logo">
-        <img src="assets/img/logo-login.png" alt="Logo" />
+        <img src="../assets/img/logo-ahorro.png" alt="Logo" />
+        <p>Bienvenido Usuario</p>
     </div>
 
     <ul class="sidebar-menu">
-        <li><a href="home.php">Dashboard</a></li>
-        <li><a href="egresos.php">Egresos</a></li>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="registrar_movimientos.php">Registrar Movimientos</a></li>
         <li><a href="perfil.php">Perfil</a></li>
     </ul>
 
