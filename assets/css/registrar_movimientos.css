@@ -1,3 +1,81 @@
-main{
+main {
     margin: 0 20%;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    border-left: 6px solid #D4AF37;
+    padding-left: 12px;
+    color: #2B2D6E;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2B2D6E;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #D4AF37;
+    box-shadow: 0 0 4px #D4AF37aa;
+}
+
+.c-group-inputs {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.c-group-inputs>div {
+    flex: 1;
+    min-width: 240px;
+}
+
+button[type="submit"] {
+    background-color: #2B2D6E;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e2150;
 }
