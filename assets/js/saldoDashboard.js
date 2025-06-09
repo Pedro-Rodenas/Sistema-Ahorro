@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
-            if(data.saldo !== undefined) {
+            if (data.saldo !== undefined) {
                 saldoValor.textContent = `S/ ${data.saldo.toFixed(2)}`;
             } else {
                 saldoValor.textContent = 'Error al cargar saldo';

@@ -9,7 +9,7 @@
     <ul class="sidebar-menu">
         <li><a class="dash" href="dashboard.php">Dashboard</a></li>
         <li><a class="registrar_movimiento" href="registrar_movimientos.php">Registrar</a></li>
-        <li><a class="" href="perfil.php">Perfil</a></li>
+        <li><a class="historial" href="historial.php">Historial</a></li>
     </ul>
 
     <div class="logout-section">

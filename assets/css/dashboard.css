@@ -1,13 +1,16 @@
 :root {
     --color-activo: #D4AF37;
-    --color-fondo: #6E7582;
+    --color-fondo: #2B2D6E;
     --color-texto: #F0E9D2;
     --color-sombra: rgba(0, 0, 0, 0.3);
+    --color-ingreso: #A5D6A7;
+    --color-egreso: #EF9A9A;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
     margin-left: 20%;
+    padding-inline: 2rem;
 }
 
 .dashboard-saldo {
@@ -34,7 +37,6 @@ main {
     }
 }
 
-/* Título */
 .dashboard-saldo h2 {
     font-weight: 600;
     font-size: 1.8rem;
@@ -43,7 +45,6 @@ main {
     text-transform: uppercase;
 }
 
-/* Valor del saldo */
 #saldo-valor {
     font-size: 4rem;
     font-weight: 900;
@@ -70,4 +71,63 @@ main {
     100% {
         left: 100%;
     }
+}
+
+.c-p-stads {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-family);
+    color: #333;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+thead tr {
+    background-color: #e0e0e0;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+tbody td {
+    padding: 12px 15px;
+}
+
+.monto-ingreso {
+    color: #2e7d32;
+    font-weight: 700;
+}
+
+.monto-egreso {
+    color: #c62828;
+    font-weight: 700;
+}
+
+.fecha-movimiento {
+    font-style: italic;
+    opacity: 0.7;
+    min-width: 110px;
 }

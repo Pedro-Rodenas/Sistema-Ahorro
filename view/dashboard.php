@@ -24,8 +24,27 @@ if (!isset($_SESSION['usuario'])) {
             <h2>Saldo Disponible</h2>
             <p id="saldo-valor">Cargando...</p>
         </div>
+        <section class="c-p-stads">
+            <div class="c-estadisticas">
+                <p>Estadísticas</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Detalle</th>
+                        <th>Tipo</th>
+                        <th>Monto (S/)</th>
+                    </tr>
+                </thead>
+                <tbody id="historial-body">
+                    <!-- filas generadas con JS -->
+                </tbody>
+            </table>
+        </section>
     </main>
     <script src="../assets/js/saldoDashboard.js"></script>
+    <script src="../assets/js/historialMovimientos.js"></script>
 </body>
 
 </html>
